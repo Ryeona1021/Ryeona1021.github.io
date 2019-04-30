@@ -1,36 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <style>
-    body{
-      font-family:sans-serif;
+    h1 {
+      background-color: rgb(235, 154, 224);
     }
-    p>strong{
-      font-size:1.3em;
-      color:rgb(65,56,171)
+
+    p#uno {
+      border-bottom: 3px black double;
     }
-    p#
+
+    p#dos {
+      margin-left: 10px;
+      text-align: center;
+    }
+
+    p#tres {
+      margin-left: 100px;
+      text-align: left;
+      border-left: solid;
+      background-color: rgb(144, 119, 228)
+    }
+
+    p#cuatro {
+      margin-right: 100px;
+      text-align: right;
+      border-right: solid;
+      background-color: rgb(192, 240, 138)
+    }
+    p#cinco {
+      margin-left: 100px;
+      margin-right: 100px;
+      text-indent: 100px;
+      text-align: justify;
+      border-right: solid;
+      border-left: solid;
+      background-color: rgb(171, 223, 232)
+
+    }
+    p#seis{
+      letter-spacing: 10px;
+
+
+    }
+    p#siete{
+    text-transform: uppercase;
+    text-decoration: line-through;
+
+
+
+
+    }
+
+
   </style>
+
+
 </head>
+
 <body>
   <h1>Práctica 4. Formato de parrafos y textos</h1>
-  <p><strong>1.PÁRRAFO ALINEADO A LA IEZ (POR DENTRO) CON BORDE INFERIOR DOBLE</strong></p>
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sunt assumenda suscipit architecto, accusantium repudiandae molestiae impedit quaerat aliquam numquam illo laborum ea in soluta aperiam, totam quam laudantium deserunt!</p>
-  <p><strong>2.</strong></p>
-  <p>Itaque natus perferendis vero mollitia ad voluptas eius quaerat minus unde. Impedit dolorem, distinctio. Quod enim aspernatur deleniti animi, expedita corporis veniam. Quaerat ipsa pariatur impedit perspiciatis natus possimus totam.</p>
-  <p><strong>3.</strong></p>
-  <p>Officia excepturi quam, similique, eligendi id non sunt culpa ullam blanditiis ducimus minus perferendis voluptatem quia ea enim aut voluptas alias at doloribus incidunt minima laborum? Adipisci tenetur, ducimus porro!</p>
-  <p><strong>4.</strong></p>
-  <p>Fugiat consectetur, a possimus delectus nam ratione officia, est, quod necessitatibus maiores facilis dicta perferendis debitis id? Voluptatem cum, illo voluptate ducimus sapiente at sint, fuga saepe ullam, nulla reiciendis.</p>
-  <p><strong>5.</strong></p>
-  <p>Vel nihil, quibusdam esse minima ad autem asperiores suscipit, laboriosam ea, quam aut laborum! Libero autem iusto itaque dolorum vitae sequi illum, voluptas ut, quibusdam sunt officia facere repellendus inventore.</p>
-  <p><strong>6.</strong></p>
-  <p>Iure enim eligendi ad tempora, sit asperiores corrupti dolor ipsum mollitia error. Nisi quaerat aspernatur repellat impedit labore! Nesciunt nisi obcaecati dolore aspernatur rem iusto optio unde quo sed quis.</p>
-  <p><strong>7.</strong></p>
-  <p>Esse fugiat quaerat delectus quod molestias minima beatae perferendis ducimus at culpa hic error aperiam nam nobis, earum autem neque fugit. Quasi odio, placeat eos, blanditiis mollitia ea numquam aliquid!</p>
+  <!-- ((p>strong)+(p>Lorem))*7 -->
+  <p><strong>1.Párrafo alineado a la izquierda(por defecto) con borde inferior doble</strong></p>
+  <p id="uno">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit sunt assumenda suscipit architecto, accusantium repudiandae molestiae impedit quaerat aliquam numquam illo laborum ea in soluta aperiam, totam quam laudantium deserunt!</p>
+  <p><strong>2.Párrafo con margen izquierdo de 10px y alineación centrada</strong></p>
+  <p id="dos">Itaque natus perferendis vero mollitia ad voluptas eius quaerat minus unde. Impedit dolorem, distinctio. Quod enim aspernatur deleniti animi, expedita corporis veniam. Quaerat ipsa pariatur impedit perspiciatis natus possimus totam.</p>
+  <p><strong>3.Párrafo con margen izquierdo de 100px , alineación izquierda , borde izquierda y color de fondo</strong></p>
+  <p id="tres">Officia excepturi quam, similique, eligendi id non sunt culpa ullam blanditiis ducimus minus perferendis voluptatem quia ea enim aut voluptas alias at doloribus incidunt minima laborum? Adipisci tenetur, ducimus porro!</p>
+  <p><strong>4.Párrafo con margen derecho de 100px, alineación derecha , borde derecha y color de fondo</strong></p>
+  <p id="cuatro">Fugiat consectetur, a possimus delectus nam ratione officia, est, quod necessitatibus maiores facilis dicta perferendis debitis id? Voluptatem cum, illo voluptate ducimus sapiente at sint, fuga saepe ullam, nulla reiciendis.</p>
+  <p><strong>5.Párrafo con margen derecho e izquierdo de 100px ,sangria de primera línea , alineación justificada , borde derecho e izquierdo y color de fondo</strong></p>
+  <p id="cinco">Vel nihil, quibusdam esse minima ad autem asperiores suscipit, laboriosam ea, quam aut laborum! Libero autem iusto itaque dolorum vitae sequi illum, voluptas ut, quibusdam sunt officia facere repellendus inventore.</p>
+  <p><strong>6.Espaciado entre letras 10px(letter-spacing)</strong></p>
+  <p id="seis">Iure enim eligendi ad tempora, sit asperiores corrupti dolor ipsum mollitia error. Nisi quaerat aspernatur repellat impedit labore! Nesciunt nisi obcaecati dolore aspernatur rem iusto optio unde quo sed quis.</p>
+  <p><strong>7.Texto en mayúsculas(text-transform) y tachado(text-decoration)</strong></p>
+  <p id="siete">Esse fugiat quaerat delectus quod molestias minima beatae perferendis ducimus at culpa hic error aperiam nam nobis, earum autem neque fugit. Quasi odio, placeat eos, blanditiis mollitia ea numquam aliquid!</p>
+
+
+
+
 </body>
+
 </html>
