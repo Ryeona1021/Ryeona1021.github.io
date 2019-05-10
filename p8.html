@@ -1,65 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <style>
+    .borde {
+      border: 1px solid black;
+      padding: 3px;
+    }
+
+    .bloque {
+      border: 1px solid black;
+    }
+  </style>
 </head>
+
 <body>
   <h1>Práctica 8 .Block vs Inline</h1>
 
 
-<p>Los elementos de un documento HTML, según su forma de mostrarse, se pueden clasificar en inline o block</p>
+  <p>Los elementos de un documento HTML, según su forma de mostrarse, se pueden clasificar en inline o block</p>
 
-<p>Los elementos de bloque(block) se muestran en una nueva linea y ocupan todo el ancho asignado</p>
+  <p>Los elementos de bloque(block) se muestran en una nueva linea y ocupan todo el ancho asignado</p>
 
-<p>Los elementos inline NO se visualiza en una misma linea y ocupa el ancho necesario.</p>
+  <p>Los elementos inline NO se visualiza en una misma linea y ocupa el ancho necesario.</p>
 
-<p><strong>Ejemplos inline:</strong></p>
+  <p><strong>Ejemplos inline:</strong></p>
 
-&ltspan&gt , &ltem&gt , &ltstrong&gt etc.. que como se ve, se muestran en la misma linea y ocupan únicamente el espacio necesario
+  <p><span class="borde">&ltspan&gt</span>,<em class="borde">&ltem&gt</em> , <strong class="borde">&ltstrong&gt</strong> etc.. que como se ve, se muestran en la misma linea y ocupan únicamente el espacio necesario</p>
 
-<p><strong>Ejemplos block:</strong></p>
+  <p><strong>Ejemplos block:</strong></p>
 
-<p>Los párrafos son un ejemplo claro de elemento de bloque</p>
-Encabezados H1-H6
-<div>Etiqueta div</div>
-    Listas
-    Ordenadas y no ordenadas
+  <p class="borde">Los párrafos son un ejemplo claro de elemento de bloque</p>
+  <h1 class="borde">Encabezados H1-H6</h1>
+  <div class="borde">Etiqueta div</div>
+  <ul class="borde">
+    <li>Listas</li>
+    <li>Ordenadas y no ordenadas</li>
+  </ul>
 
-Actividad
-Modifica la propiedad display para que el siguiente grupo de 10 elemnetos div se visualize según la cabecera.
+  <H1>Actividad</H1>
+  <P>Modifica la propiedad display para que el siguiente grupo de 10 elemnetos div se visualize según la cabecera.
+  </P>
+  <p><strong>10 div - block</strong></p>
 
-10 div - block
-1
-2
-...
-9
-10
+  <div class="bloque">
+    <div>1</div>
+    <div>2</div>
+    <div>...</div>
+    <div>9</div>
+    <div>10</div>
+  </div>
+  <p><strong>10 div - inline</strong></p>
 
-10 div - inline
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+  <div class="bloque">
+  <div>1</div>
+  <div>1</div>
+  <div>1</div>
+  <div>1</div>
 
-10 div - inline-block
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
+
+  </div>
+
+  <p><strong>10 div - inline-block</strong></p>
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+  10
+  </div>
+
 </body>
+
 </html>
